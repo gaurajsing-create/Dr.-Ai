@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dr. AI - Smart Health Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <main class="container">
+
+        <!-- Header -->
+        <header class="header">
+
+            <div class="doctor-robot">
+                🤖
+                <span>🩺</span>
+            </div>
+
+            <div>
+                <h1>Dr. AI</h1>
+                <p>Smart Health Assistant</p>
+            </div>
+
+        </header>
+
+
+        <!-- Welcome -->
+        <section class="welcome-card">
+
+            <h2>👋 Hello, I'm Dr. AI</h2>
+
+            <p>
+                Tell me about your symptoms and I will provide
+                general health information and guidance.
+            </p>
+
+            <div class="notice">
+                ⚠️ Dr. AI provides general health information.
+                It does not replace a qualified doctor.
+            </div>
+
+        </section>
+
+
+        <!-- Chat -->
+        <section class="chat-card">
+
+            <div class="chat-header">
+                <span class="online-dot"></span>
+                Dr. AI is online
+            </div>
+
+            <div id="chat">
+
+                <div class="bot-message">
+                    <strong>🤖 Dr. AI</strong>
+
+                    <p>
+                        Hello! 👋<br>
+                        What symptoms are you experiencing?
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="input-area">
+
+                <input
+                    type="text"
+                    id="symptoms"
+                    placeholder="Type your symptoms..."
+                    onkeypress="handleEnter(event)"
+                >
+
+                <button onclick="checkSymptoms()">
+                    Send
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Quick Symptoms -->
+        <section class="quick-card">
+
+            <h2>Common Symptoms</h2>
+
+            <p class="subtitle">
+                Select a symptom for quick information
+            </p>
+
+            <div class="symptoms-grid">
+
+                <button onclick="quickSearch('fever')">
+                    🌡️
+                    <span>Fever</span>
+                </button>
+
+                <button onclick="quickSearch('cold')">
+                    🤧
+                    <span>Cold</span>
+                </button>
+
+                <button onclick="quickSearch('cough')">
+                    😷
+                    <span>Cough</span>
+                </button>
+
+                <button onclick="quickSearch('headache')">
+                    🤕
+                    <span>Headache</span>
+                </button>
+
+                <button onclick="quickSearch('stomach pain')">
+                    🩺
+                    <span>Stomach Pain</span>
+                </button>
+
+                <button onclick="quickSearch('sore throat')">
+                    🗣️
+                    <span>Sore Throat</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Features -->
+        <section class="features">
+
+            <div class="feature">
+                <div>🔒</div>
+                <h3>Simple</h3>
+                <p>Easy to use</p>
+            </div>
+
+            <div class="feature">
+                <div>⚡</div>
+                <h3>Fast</h3>
+                <p>Quick responses</p>
+            </div>
+
+            <div class="feature">
+                <div>💙</div>
+                <h3>Helpful</h3>
+                <p>Health guidance</p>
+            </div>
+
+        </section>
+
+
+        <footer>
+
+            <h3>Dr. AI</h3>
+
+            <p>
+                Smart Health Assistant • Mini Project
+            </p>
+
+            <small>
+                For educational purposes only. For diagnosis and
+                treatment, consult a qualified healthcare professional.
+            </small>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
